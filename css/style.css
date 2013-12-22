@@ -1,0 +1,40 @@
+body{
+	background-image: url(../images/cons-bg.jpg);
+	background-size: cover;
+}
+
+.location{
+	float:right;
+	font-weight:lighter;
+}
+
+.dur{
+	font-weight:lighter;
+}
+.wia{
+	font-size: 125%;
+}
+
+.navbar{
+	background-color: #00628B;
+}
+
+.jw{
+	margin-left:15px;
+}
+
+hr{
+	padding:0px;
+	margin:0px;
+	height:2px;
+	background-color:grey;
+}
+
+@media (min-width: 980px){
+	body{
+		background-image: url(../images/cons-bg.jpg);
+		background-size: cover;
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+}

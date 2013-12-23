@@ -13,6 +13,15 @@ body{
 }
 .wia{
 	font-size: 125%;
+    text-align:center;
+}
+
+.headshot {
+    max-width:600px;
+}
+
+.hs {
+    text-align:center;
 }
 
 .navbar{
@@ -37,4 +46,14 @@ hr{
 		padding-top: 60px;
 		padding-bottom: 40px;
 	}
+}
+
+#to-res, #to-port, #to-blog {
+    width:95%;
+    padding-left:0;
+    padding-right:0;
+}
+
+.btn-wp {
+    text-align:center;
 }

@@ -1,22 +1,25 @@
 $(function(){
-	$(".resume").addClass("active-d");
-	$(".home").hide();
+	$(".home").addClass("active-d");
+	$(".resume").hide();
 	$(".portfolio").hide();
 
 
-	$(".resume-b").click(function(){
-		$(".active-d").hide("fast");
-		$(".active-d").removeClass("active-d");
-		$(".resume").show("slow");
-		$(".resume").addClass("active-d");
+	$(".resume-b").click(function () {
+	    switchDiv($(".resume"));
 	});
 
-	/*$(".home-b").click(function(){
-		$(".active-d").hide("fast");
-		$(".active-d").removeClass("active-d");
-		$(".home").show("slow");
-		$(".home").addClass("active-d");
-	});*/
+	$(".home-b").click(function(){
+	    switchDiv($(".home"));
+	});
 
 });
+
+function switchDiv(toDiv) {
+    if (!toDiv.hasClass("active-d")) {
+        $(".active-d").hide("fast");
+        $(".active-d").removeClass("active-d");
+        $(toDiv).show("slow");
+        $(toDiv).addClass("active-d");
+    }
+}
 
